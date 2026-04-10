@@ -1,31 +1,15 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.json",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "icons/**",
-      "use": "@vercel/static"
+  "functions": {
+    "api/recommend.js": {
+      "memory": 256,
+      "maxDuration": 30
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "src": "/api/recommend",
+      "dest": "/api/recommend.js"
     },
     {
       "src": "/(.*)",
