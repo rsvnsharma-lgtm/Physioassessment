@@ -2,25 +2,15 @@
   "name": "mhitr Musculoskeletal Assessment",
   "short_name": "mhitr Physio",
   "description": "AI-powered musculoskeletal ROM assessment platform by mhitr",
-  "start_url": "/Physioassessment/",
-  "scope": "/Physioassessment/",
+  "start_url": "/",
+  "scope": "/",
   "display": "fullscreen",
   "orientation": "any",
   "background_color": "#080f0c",
   "theme_color": "#00e896",
   "icons": [
-    {
-      "src": "/Physioassessment/icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/Physioassessment/icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ],
   "categories": ["health", "medical"],
   "lang": "en"
